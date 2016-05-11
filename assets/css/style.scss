@@ -1,0 +1,314 @@
+/* Base
+***************************/
+html {
+  height: 100%;
+}
+body, h1, h4, .h4 {
+	font-family: 'Droid Serif', serif;
+	line-height: 160%;
+}
+
+/* Typo
+***************************/
+
+/* Links */
+a {
+	color: #1C4F8B;
+	position: relative;
+}
+a:active {
+	bottom: -1px;
+}
+
+/* Headings */
+h2, h3, .h3, h5, a.button, a#dropbox {
+	font-family: 'Droid Sans', sans-serif;
+}
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 50px 0 20px 0;
+}
+h2:after {
+	content: '';
+	display: block;
+	width: 40px;
+	height: 5px;
+	background: #2B2A30;
+	margin-top: 10px;
+}
+h3, .h3 {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+h4, .h4 {
+    font-size: 20px;
+	font-weight: 700;
+    color: #191919;
+    margin-bottom: 0;
+}
+
+/* Utility */
+.scrollto {
+    margin-top: 50px;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.overflow {
+	overflow: hidden;
+}
+/* Lists */
+.strip {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+.check {
+	li {
+		padding-left: 20px;
+		background: url(../images/check.png) no-repeat 0 50%;
+	}
+}
+
+/* Buttons */
+a#dropbox,
+a.button {
+	background: #F2F2F2;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #222;
+	padding: 8px 10px;
+	border: 0;
+	height: auto;
+	box-shadow: 0 0 transparent;
+	line-height: 1;
+	border-radius: 2px;
+	display: inline-block;
+}
+a#dropbox span {
+	display: none;
+}
+a#dropbox:hover,
+a.button:hover {
+	background: #ddd;
+}
+a#dropbox:active,
+a.button:active {
+	background: #fc0;
+}
+
+/* Header
+***************************/
+header {
+    padding-top: 40px;
+	text-align: center;
+	span {
+	    color: #888;
+	    font-size: 11px;
+	    text-transform: uppercase;
+	}
+	.actions {
+	    margin: 15px 0 30px;
+	}
+	a.button:first-of-type {
+	    margin-right: 20px;
+	}
+}
+
+	/* Nav
+	***************************/
+	nav {
+	    background: #f7f7f7;
+	    margin-bottom: 20px;
+	    overflow: hidden;
+	    padding: 0 0 20px;
+		li {
+		    width: 50%;
+		    float: left;
+		    text-align: left;
+		    padding: 10px 0;
+			text-indent: 30px;
+		}
+	}
+
+/* Main
+***************************/
+main {
+    padding: 10px 30px;
+	h2:first-of-type {
+	    margin-top: 0;
+	}
+}
+
+/* Experience
+***************************/
+p.date {
+	font-size: 12px;
+	color: #999;
+	margin-top: 5px;
+}
+
+/* Accordion */
+.accordion-toggle {
+	cursor: pointer;
+	margin: 0;
+}
+.accordion-content {
+	display: none;
+}
+.accordion-content.default {
+	display: block;
+}
+.accordion-toggle:first-of-type:before {
+    display: none;
+}
+.accordion-toggle:before {
+    content: '';
+    display: block;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 20px 0 30px 0;
+}
+
+/* Skills
+***************************/
+.skills {
+	li {
+	    background-position-y: 7px;
+	}
+}
+
+/* Tools
+***************************/
+.tools {
+	overflow: hidden;
+	li {
+		width: 50%;
+		float: left;
+	}
+}
+
+/* References
+***************************/
+.references {
+	p {
+		margin-top: 0;
+		color: #999;
+	}
+	.h4 {
+		text-transform: none;
+	}
+}
+
+/* Connect
+***************************/
+.connect {
+	li {
+		margin-bottom: 7px;
+	}
+	.location {
+	    background-image: url(../images/location.png);
+		background-position: 2px 50%;
+	}
+	.email {
+	    background-image: url(../images/email.png);
+	}
+	.skype {
+	    background-image: url(../images/skype.png);
+	}
+	.mobile {
+	    background-image: url(../images/mobile.png);
+		background-position: 2px 50%;
+	}
+}
+
+/* Media queries
+***************************/
+
+/* Mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+}
+
+/* Tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
+
+/* Desktop */
+@media (min-width: 960px){
+	body {
+	    max-width: 700px;
+	    margin: 0 auto;
+	}
+	nav {
+	    padding-bottom: 0;
+		li {
+		    display: inline;
+		    width: auto;
+		    float: none;
+		    margin: 0 20px
+		}
+		li:after {
+		    content: '/';
+		    position: relative;
+		    right: -15px;
+		    font-size: 10px;
+		    color: #999;
+		}
+		li:last-of-type:after {
+		    display: none;
+		}
+	}
+	.experience p:last-of-type {
+	    margin-bottom: 30px;
+	}
+	.skills {
+		ul {
+			overflow: hidden;
+		}
+		li {
+			width: 44%;
+			float: left;
+			min-height: 132px;
+			a {
+				text-decoration: none;
+				color: #444;
+				font-weight: 700;
+			}
+		}
+		li:nth-of-type(even) {
+			float: right;
+		}
+		.accordion-content {
+			display: block;
+		}
+	}
+	.tools li {
+	    width: 25%;
+	}
+	.references {
+		overflow: hidden;
+		div {
+			width: 50%;
+			float: left;
+		}
+	}
+}

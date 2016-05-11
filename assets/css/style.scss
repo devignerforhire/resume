@@ -7,6 +7,9 @@ body, h1, h4, .h4 {
 	font-family: 'Droid Serif', serif;
 	line-height: 160%;
 }
+h1 span {
+	display: none;
+}
 
 /* Typo
 ***************************/
@@ -27,13 +30,13 @@ h2, h3, .h3, h5, a.button, a#dropbox {
 h1 {
 	font-size: 40px;
 }
-h2 {
+main h2 {
 	font-size: 15px;
 	text-transform: uppercase;
 	font-weight: 700;
 	margin: 50px 0 20px 0;
 }
-h2:after {
+main h2:after {
 	content: '';
 	display: block;
 	width: 40px;
@@ -114,19 +117,28 @@ a.button:active {
 header {
     padding-top: 40px;
 	text-align: center;
-	span {
+	h2.h3 {
+		color: #5F5F5F;
+		margin-top: 1px;
+	}
+	em {
 	    color: #888;
-	    font-size: 11px;
+	    font-size: 15px;
 	    text-transform: uppercase;
+	}
+	i {
+		color: #999;
+	}
+	img {
+		margin-top: 40px;
 	}
 	.actions {
 	    margin: 15px 0 30px;
 	}
-	a.button:first-of-type {
-	    margin-right: 20px;
+	a.button:nth-of-type(even) {
+	    margin: 0 20px;
 	}
 }
-
 	/* Nav
 	***************************/
 	nav {
@@ -134,6 +146,7 @@ header {
 	    margin-bottom: 20px;
 	    overflow: hidden;
 	    padding: 0 0 20px;
+		border-radius: 2px;
 		li {
 		    width: 50%;
 		    float: left;
@@ -257,6 +270,12 @@ p.date {
 	body {
 	    max-width: 700px;
 	    margin: 0 auto;
+	}
+	h1 span {
+		display: inline-block;
+	}
+	h2.h3 {
+		font-size: 16px;
 	}
 	nav {
 	    padding-bottom: 0;

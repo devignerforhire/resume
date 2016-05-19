@@ -1,0 +1,75 @@
+/* Print styles
+***************************/
+body {
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 none;
+    min-width: 100%;
+}
+header {
+	padding: 40px 0;
+}
+.actions,
+.right,
+.scrollto,
+button.show-more {
+	display: none;
+}
+.photo {
+	max-width: 300px;
+	height: auto;
+}
+.projects,
+.accordion .accordion-content {
+	display: block!important;
+}
+.projects {
+	background: none;
+	padding: 0;
+}
+.projects h6 {
+	margin: 40px 0 0;
+}
+main div {
+	width: 100%;
+	float: none;
+	margin: 0;
+}
+main {
+	h2 {
+		margin: 40px 0 10px 0!important;
+		float: left;
+		width: 100%;
+	}
+	h2:first-of-type {
+	    margin: 0!important;
+	}
+}
+.skills,
+.tools {
+	ul {
+		overflow: hidden;
+	}
+	li {
+		width: 44%;
+		float: left;
+		margin-bottom: 20px;
+		a {
+			text-decoration: none;
+			color: #444;
+			font-weight: 700;
+		}
+	}
+	li:nth-of-type(even) {
+		float: right;
+	}
+	div.accordion-content {
+		display: block;
+	}
+}
+.check {
+	li {
+		padding-left: 20px;
+		background: url(../images/check.png) no-repeat 0 50%;
+	}
+}

@@ -480,11 +480,20 @@ div.accordion-toggle:before {
     body {
         padding: 0;
     }
-	header {
+	header.top {
 		padding-bottom: 20px;
 		h2.h3 {
 	        font-size: 14px;
+			margin-bottom: 0;
 	    }
+	}
+	section .content,
+	section .meta {
+		width: 100%;
+		float: none;
+	}
+	section .meta {
+		margin: 0;
 	}
 	.photo {
 		max-width: 100%;

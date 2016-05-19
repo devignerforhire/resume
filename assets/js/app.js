@@ -15,9 +15,9 @@
             $( '.projects' ).toggle();
 
             if ( $( '.projects' ).is( ':visible' ) ) {
-				$( 'button.show-more span' ).html('Show less');
+				$( 'button.show-more .text' ).html('Show less');
             } else {
-				$( 'button.show-more span' ).html('Show more');
+				$( 'button.show-more .text' ).html('Show more');
             }
 
         },
@@ -50,7 +50,6 @@
 
 			// Hide the other panels
 			$(".p-experience .accordion-content").not($(this).next()).slideUp('fast');
-			$(".p-experience .accordion-content i").not($(this).next()).addClass('down-icon')
 
 		});
 
@@ -61,7 +60,6 @@
 
 			// Hide the other panels
 			$(".p-skill .accordion-content").not($(this).next()).slideUp('fast');
-			$(".p-skill .accordion-content i").not($(this).next()).addClass('down-icon')
 
 		});
 

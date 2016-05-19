@@ -216,6 +216,9 @@ a#dropbox:active,
 	background: transparent url(../assets/images/border.jpg) repeat-x bottom;
 	padding: 40px 0 80px;
 	margin: 0 30px;
+	h1 a {
+		color: #222;
+	}
 	.chi {
 	    display: block;
 	    margin: 0 auto 20px;

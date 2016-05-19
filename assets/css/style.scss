@@ -3,8 +3,6 @@
 html {
 	box-sizing: border-box;
 	height: 100%;
-    background: #f7f7f7;
-	padding: 50px 0;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -12,15 +10,11 @@ html {
 body {
     background: #fff;
     padding: 50px;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-    width: 1440px;
+    width: 1340px;
 }
 body, h1, h4, .h4 {
 	font-family: 'Droid Serif', serif;
 	line-height: 160%;
-}
-h1 span {
-	display: none;
 }
 
 /* Typo
@@ -102,7 +96,8 @@ ul li.last {
     border-radius: 2px;
 }
 h4.h3 {
-    font-size: 15px;
+	font-size: 14px;
+	font-weight: normal;
 }
 .featherlight .featherlight-close-icon {
     top: 20px;
@@ -213,13 +208,13 @@ a#dropbox:active,
 ***************************/
 .top {
 	text-align: center;
-	background: transparent url(../assets/images/border.jpg) repeat-x bottom;
 	padding: 40px 0 80px;
 	margin: 0 30px;
 	h1 a {
 		color: #222;
+		text-decoration: none;
 	}
-	.chi {
+	.qi {
 	    display: block;
 	    margin: 0 auto 20px;
 	}
@@ -297,38 +292,47 @@ a#dropbox:active,
 
 /* Section
 ***************************/
-section {
+article {
+	background: #fafafa url(../images/border.jpg) repeat-x top;
 	overflow: hidden;
-    padding: 10px 30px;
+	padding: 0 40px;
 	h2:first-of-type {
 	    margin-top: 0;
 	}
-	.content, .meta {
-	    width: 45%;
-	    float: left;
-	}
-	.meta {
-	    margin-left: 5%;
-		width: 50%;
-	}
+}
+.content, .meta {
+	width: 45%;
+	float: left;
+}
+.meta {
+	margin-left: 5%;
+	width: 50%;
 }
 
 /* Experience
 ***************************/
-p.date {
+.p-date {
 	font-size: 12px;
 	color: #999;
 	margin: 5px 0 19px;
 }
+.accordion-toggle {
+	h3.h4 {
+		text-transform: none;
+	}
+	h4 {
+		margin-top: 5px;
+	}
+}
 
 /* Projects */
 .projects {
-    background: #f9f9f9;
+    background: #fff;
     padding: 30px;
     border-radius: 2px;
     margin-bottom: 20px;
 	h5 {
-	    font-size: 13px;
+	    font-size: 14px;
 	    color: #404040;
 	    text-transform: uppercase;
 		margin-bottom: 15px;
@@ -346,7 +350,7 @@ p.date {
 		margin: 5px 0;
 	}
 	p:last-of-type {
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 	}
 	.media:last-of-type p:last-of-type {
 		margin-bottom: 0;
@@ -368,7 +372,6 @@ button.show-more:focus {
 .down-icon {
 	background: transparent url(down.png) no-repeat;
 }
-
 
 /* Accordion */
 .accordion {
@@ -482,15 +485,19 @@ div.accordion-toggle:before {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body {
         padding: 0;
+		margin: 0;
     }
-	header.top {
+	.top {
 		padding-bottom: 20px;
 		h2.h3 {
 	        font-size: 14px;
 			margin-bottom: 0;
 	    }
+		h1 a {
+			font-size: 80%;
+		}
 	}
-	section .meta {
+	.meta {
 		margin: 0;
 	}
 	.photo {
@@ -521,7 +528,7 @@ div.accordion-toggle:before {
         margin-top: 0;
     }
 	.tools li {
-        width: 100%;
+        width: 50%;
     }
     .references h4 {
         font-weight: normal;
@@ -543,9 +550,6 @@ div.accordion-toggle:before {
 @media (min-width: 960px){
 	body {
 	    margin: 0 auto;
-	}
-	h1 span {
-		display: inline-block;
 	}
 	h2.h3 {
 		font-size: 16px;
@@ -569,9 +573,9 @@ div.accordion-toggle:before {
 		    display: none;
 		}
 	}
-	.experience p:last-of-type {
-	    margin-bottom: 10px;
-	}
+	.media-body
+	.media-body
+	.media-body
 	button.show-more {
 		display: none;
 	}
@@ -627,22 +631,20 @@ div.accordion-toggle:before {
     }
 }
 @media (max-width: 1090px) {
-
-    section .content,
-	section .meta {
+    .content,
+	.meta {
         width: 100%;
         float: none;
         margin: 0;
     }
-
 }
 @media (max-width: 1290px){
 	html {
-		padding: 10px 20px 10px 2px;
+		padding: 0;
 	}
 	body {
 		width: 100%;
-		margin: 0 10px;
+		margin: 0;
 	}
 
 }

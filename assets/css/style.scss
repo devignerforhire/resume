@@ -125,7 +125,7 @@ h4.h3 {
 .check {
 	li {
 		padding-left: 20px;
-		background: url(../images/check.png) no-repeat 0 50%;
+		background: url(../images/check.png) no-repeat 0 7px;
 	}
 }
 
@@ -316,7 +316,8 @@ article {
 	color: #999;
 	margin: 5px 0 19px;
 }
-.accordion-toggle {
+.accordion-toggle,
+.p-education {
 	h3.h4 {
 		text-transform: none;
 	}

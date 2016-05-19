@@ -487,11 +487,6 @@ div.accordion-toggle:before {
 			margin-bottom: 0;
 	    }
 	}
-	section .content,
-	section .meta {
-		width: 100%;
-		float: none;
-	}
 	section .meta {
 		margin: 0;
 	}
@@ -630,7 +625,8 @@ div.accordion-toggle:before {
 }
 @media (max-width: 1090px) {
 
-    section > div {
+    section .content,
+	section .meta {
         width: 100%;
         float: none;
         margin: 0;

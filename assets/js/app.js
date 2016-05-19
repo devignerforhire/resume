@@ -43,14 +43,25 @@
 
         new dfh();
 
-		$('.accordion').find('.accordion-toggle').click(function(){
+		$('.p-experience .accordion').find('.accordion-toggle').click(function(){
 
 			// Expand or collapse the panel
 			$(this).next().slideToggle('fast');
 
 			// Hide the other panels
-			$(".accordion-content").not($(this).next()).slideUp('fast');
-			$(".accordion-content i").not($(this).next()).addClass('down-icon')
+			$(".p-experience .accordion-content").not($(this).next()).slideUp('fast');
+			$(".p-experience .accordion-content i").not($(this).next()).addClass('down-icon')
+
+		});
+
+		$('.p-skill .accordion').find('.accordion-toggle').click(function(){
+
+			// Expand or collapse the panel
+			$(this).next().slideToggle('fast');
+
+			// Hide the other panels
+			$(".p-skill .accordion-content").not($(this).next()).slideUp('fast');
+			$(".p-skill .accordion-content i").not($(this).next()).addClass('down-icon')
 
 		});
 

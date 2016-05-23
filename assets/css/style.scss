@@ -291,7 +291,7 @@ a#dropbox:active,
 article .in {
 	background: #fafafa url(../images/border.jpg) repeat-x top;
 	overflow: hidden;
-	padding: 0 40px;
+	padding: 0 40px 40px;
 	h2:first-of-type {
 	    margin-top: 0;
 	}
@@ -561,6 +561,7 @@ div.accordion-toggle:before {
 @media (min-width: 960px){
 	body {
 	    margin: 0 auto;
+		padding: 50px 50px 0;
 	}
 	h2.h3 {
 		font-size: 16px;

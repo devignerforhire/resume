@@ -125,7 +125,7 @@ h4.h3 {
 .check {
 	li {
 		padding-left: 20px;
-		background: url(../images/check.png) no-repeat 0 7px;
+		background: url(check.png) no-repeat 0 7px;
 	}
 }
 
@@ -158,7 +158,7 @@ button.button {
 }
 a#dropbox,
 a#dropbox:hover {
-	background-image: url(../images/dropbox.png);
+	background-image: url(dropbox.png);
 	background-repeat: no-repeat;
 	background-position: 8px 50%;
 	padding-left: 25px;
@@ -168,7 +168,7 @@ a#dropbox:hover {
 	line-height: 15px !important;
 }
 a#dropbox:hover {
-	background-image: url(../images/dropbox-white.png);
+	background-image: url(dropbox-white.png);
 	background-color: #555;
 	color: #fff;
 }
@@ -289,7 +289,7 @@ a#dropbox:active,
 /* Section
 ***************************/
 article .in {
-	background: #fafafa url(../images/border.jpg) repeat-x top;
+	background: #fafafa url(border.jpg) repeat-x top;
 	overflow: hidden;
 	padding: 0 40px 40px;
 	h2:first-of-type {

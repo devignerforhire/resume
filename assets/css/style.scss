@@ -327,7 +327,7 @@ article .in {
     background: rgba(183, 183, 183, 0.1);
     padding: 30px;
     border-radius: 2px;
-    margin-bottom: 20px;
+	margin: 25px 0 30px;
 	h5 {
 	    font-size: 14px;
 	    color: #404040;
@@ -397,8 +397,8 @@ div.accordion-toggle:before {
     border-bottom: 1px dashed #ddd;
     margin: 0 0 20px 0;
 }
-.accordion .media i,
-.projects .media i {
+.accordion .media span,
+.projects .media span {
     display: inline-block;
     width: 17px;
     height: 7px;
@@ -406,7 +406,7 @@ div.accordion-toggle:before {
     top: 7px;
     margin: 0;
 }
-.projects .media i {
+.projects .media span {
 	width: 22px;
     height: 17px;
     top: 6px;
@@ -533,6 +533,9 @@ div.accordion-toggle:before {
     .scrollto {
         margin-top: 0;
     }
+	.projects {
+		display: none;
+	}
 	.tools li {
         width: 50%;
     }
@@ -581,15 +584,8 @@ div.accordion-toggle:before {
 		    display: none;
 		}
 	}
-	.media-body
-	.media-body
-	.media-body
 	button.show-more {
 		display: none;
-	}
-	.projects {
-		display: block!important;
-		margin: 25px 0 30px;
 	}
 	.skills {
 		ul {
@@ -609,7 +605,7 @@ div.accordion-toggle:before {
 			float: right;
 		}
 		div.accordion-content {
-			display: block !important;
+			display: block;
 			margin-top: 12px;
 		}
 	}

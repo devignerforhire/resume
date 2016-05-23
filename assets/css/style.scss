@@ -1,5 +1,6 @@
 /* Base
 ***************************/
+
 html {
 	box-sizing: border-box;
 	height: 100%;
@@ -16,6 +17,7 @@ body, h1, h4, .h4 {
 	font-family: 'Droid Serif', serif;
 	line-height: 160%;
 }
+
 
 /* Typo
 ***************************/
@@ -190,7 +192,7 @@ a#dropbox:active,
 	outline: none;
 }
 
-/* On-page nav */
+/* Page navigation */
 .overflow a {
     text-decoration: none;
     color: #555;
@@ -204,8 +206,10 @@ a#dropbox:active,
     background: #ddd;
 }
 
+
 /* Header
 ***************************/
+
 .top {
 	text-align: center;
 	padding: 40px 0 80px;
@@ -286,6 +290,7 @@ a#dropbox:active,
 		}
 	}
 
+
 /* Section
 ***************************/
 article .in {
@@ -304,6 +309,7 @@ article .in {
 	margin-left: 5%;
 	width: 50%;
 }
+
 
 /* Experience
 ***************************/
@@ -421,6 +427,7 @@ div.accordion-toggle:before {
 	background: transparent url(hwr.png) no-repeat;
 }
 
+
 /* Skills
 ***************************/
 .skills {
@@ -428,6 +435,7 @@ div.accordion-toggle:before {
 	    background-position-y: 7px;
 	}
 }
+
 
 /* Tools
 ***************************/
@@ -444,6 +452,7 @@ div.accordion-toggle:before {
 		}
 	}
 }
+
 
 /* References
 ***************************/
@@ -469,6 +478,7 @@ div.accordion-toggle:before {
 	}
 }
 
+
 /* Connect
 ***************************/
 .connect {
@@ -483,6 +493,7 @@ div.accordion-toggle:before {
 	    margin-left: 3px;
 	}
 }
+
 
 /* Media queries
 ***************************/

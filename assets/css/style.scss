@@ -555,7 +555,12 @@ div.accordion-toggle:before {
         font-size: 12px;
     }
 }
-
+@media only screen and (max-width: 460px) {
+	.projects {
+		margin-left: -40px;
+	    margin-right: -40px;
+	}
+}
 @media only screen and (max-width: 750px) {
 	.tools li {
 		width: 50%;

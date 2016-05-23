@@ -397,8 +397,8 @@ div.accordion-toggle:before {
     border-bottom: 1px dashed #ddd;
     margin: 0 0 20px 0;
 }
-.accordion .media span,
-.projects .media span {
+.accordion .media-figure,
+.projects .media-figure {
     display: inline-block;
     width: 17px;
     height: 7px;
@@ -406,7 +406,7 @@ div.accordion-toggle:before {
     top: 7px;
     margin: 0;
 }
-.projects .media span {
+.projects .media-figure {
 	width: 22px;
     height: 17px;
     top: 6px;

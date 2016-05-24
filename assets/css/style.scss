@@ -430,9 +430,11 @@ div.accordion-toggle:before {
 
 /* Skills
 ***************************/
-.skills {
+.p-skill {
 	li {
 	    background-position-y: 7px;
+		width: 50%;
+		float: left;
 	}
 }
 

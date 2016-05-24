@@ -289,7 +289,10 @@ a#dropbox:active,
 		    border-bottom: 2px solid #ddd;
 		}
 	}
-
+	.download,
+	.print {
+		display: none;
+	}
 
 /* Section
 ***************************/
@@ -433,8 +436,6 @@ div.accordion-toggle:before {
 .p-skill {
 	li {
 	    background-position-y: 7px;
-		width: 50%;
-		float: left;
 	}
 }
 
@@ -527,16 +528,10 @@ div.accordion-toggle:before {
 		h2 {
 			margin-bottom: 0;
 		}
-		a:first-of-type {
-	        display: none;
-	    }
 		a:last-of-type {
 	        margin-top: 15px;
 	    }
     }
-	.print {
-		display: none;
-	}
     #dropbox {
         margin-left: 0;
     } /* todo: remove id */
@@ -609,6 +604,10 @@ div.accordion-toggle:before {
 		    display: none;
 		}
 	}
+	.actions a:first-of-type,
+	.actions .print {
+		display: inline-block;
+	}
 	button.show-more {
 		display: none;
 	}
@@ -666,6 +665,15 @@ div.accordion-toggle:before {
         float: none;
         margin: 0;
     }
+	button.show-more {
+		display: block;
+	}
+	.projects {
+		display: none;
+	}
+	.p-skill .accordion-content {
+    	display: block;
+	}
 }
 @media (max-width: 1290px){
 	html {

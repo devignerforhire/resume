@@ -1,75 +1,36 @@
 /* Print styles
 ***************************/
-body {
-    padding: 10px;
-    margin: 0 auto;
-    box-shadow: 0 0 none;
-    min-width: 100%;
-}
-header {
-	padding: 40px 0;
-}
-.actions,
-.right,
-.scrollto,
-button.show-more {
-	display: none;
-}
-.photo {
-	max-width: 300px;
-	height: auto;
-}
-.projects,
-.accordion .accordion-content {
-	display: block!important;
-}
-.projects {
-	background: none;
-	padding: 0;
-}
-.projects h6 {
-	margin: 40px 0 0;
-}
-main div {
-	width: 100%;
-	float: none;
-	margin: 0;
-}
-main {
-	h2 {
-		margin: 40px 0 10px 0!important;
-		float: left;
-		width: 100%;
-	}
-	h2:first-of-type {
-	    margin: 0!important;
-	}
-}
-.skills,
-.tools {
-	ul {
-		overflow: hidden;
-	}
-	li {
-		width: 44%;
-		float: left;
-		margin-bottom: 20px;
-		a {
-			text-decoration: none;
-			color: #444;
-			font-weight: 700;
-		}
-	}
-	li:nth-of-type(even) {
-		float: right;
-	}
-	div.accordion-content {
-		display: block;
-	}
-}
-.check {
-	li {
-		padding-left: 20px;
-		background: url(../images/check.png) no-repeat 0 50%;
-	}
-}
+body { padding: 0; margin: 0 auto; box-shadow: 0 0 none; min-width: 100%; font: 12pt Georgia, "Times New Roman", Times, serif; line-height: 1.3; }
+header { padding: 0 }
+body:after { content: "See http://resume.devignerforhire.com for an always up-to-date version :)"; margin-top: 15px; color: #888; display: block; text-align: center; }
+article .in { background: none; padding: 0; margin: 0; }
+
+.accordion { margin: 0; }
+.accordion-content.summary, .media-figure, div.accordion-toggle:before, .top em strong, .top .qi, .photo, .actions, .right, .scrollto, button.show-more, .p-skill .accordion-content, .tools .accordion-content { display: none !important }
+
+.top p { margin: 0 }
+.top p span:first-of-type, .top p em { display: none }
+.top p span:last-of-type:before { content: "summarized for print"; margin-right: 5px; font-weight: bold; }
+
+.projects { background: none; padding: 0 0 0 15px; margin-bottom: 30px; border-left: 5px solid #ddd; overflow: hidden; }
+.projects h5 { margin-bottom: 15px }
+.projects h6 { margin: 0 }
+
+.in div { width: 100%; float: none; margin: 0; }
+section h2 { margin: 0 !important; padding: 0!important; float: left; width: 100%; }
+.in h2:first-of-type { margin: 0 !important }
+
+.p-skill ul, .tools ul { overflow: hidden; margin: 0; padding: 0; }
+.p-skill li, .tools li { width: 25%; float: left; margin: 0; padding: 0; }
+.p-skill li { width: 50% }
+.p-skill li a, .tools li a { text-decoration: none; color: #444; font-weight: normal; line-height: 140%; }
+
+.p-experience { margin: 30px 0; overflow: hidden; }
+.p-experience h3 { float: right; width: 70%; margin: 0; }
+.p-experience .p-date { float: left; width: 30%; margin-left: 15px; }
+
+.references { overflow: hidden }
+.references div { width: 50%; float: left; }
+
+.tools h2,
+.references h2 { margin-top: 30px!important; }

@@ -1,16 +1,20 @@
 /* Print styles
 ***************************/
-body { padding: 0; margin: 0 auto; box-shadow: 0 0 none; min-width: 100%; font: 12pt Georgia, "Times New Roman", Times, serif; line-height: 1.3; }
-header { padding: 0 }
-body:after { content: "See http://resume.devignerforhire.com for an always up-to-date version :)"; margin-top: 15px; color: #888; display: block; text-align: center; }
+body { padding: 20px; margin: 0 auto; box-shadow: 0 0 none; min-width: 100%; font: 12pt Georgia, "Times New Roman", Times, serif; line-height: 1.3; color: #222; }
+header { padding: 0;  }
 article .in { background: none; padding: 0; margin: 0; }
 
 .accordion { margin: 0; }
-.accordion-content.summary, .media-figure, div.accordion-toggle:before, .top em strong, .top .qi, .photo, .actions, .right, .scrollto, button.show-more, .p-skill .accordion-content, .tools .accordion-content { display: none !important }
+.phinda, .photo, .tools, .media-figure, div.accordion-toggle:before, .top em strong, .top .qi, .top p span:first-of-type, .top p em, .actions, .right, .scrollto, button.show-more, .p-skill .accordion-content, .tools .accordion-content { display: none !important }
 
+.top { margin: 0 0 30px; padding: 0; text-align: left; }
 .top p { margin: 0 }
-.top p span:first-of-type, .top p em { display: none }
-.top p span:last-of-type:before { content: "summarized for print"; margin-right: 5px; font-weight: bold; }
+.top p span:last-of-type:before { content: "summarized for print"; margin-right: 5px; font-weight: 700; }
+.top img { margin: 0; }
+.top h2.h3:after { border-top: 1px dashed #ddd; padding-top: 10px; content: "See http://resume.devignerforhire.com for the full always up-to-date version."; margin-top: 10px; font-size: 12px; color: #999; display: block; }
+.print-media { display: flex; align-items: flex-start; }
+.top .print-media-figure { display: inline-block; margin: 0 30px 0 0; padding: 0;}
+.print-media-body { flex: 1; }
 
 .projects { background: none; padding: 0 0 0 15px; margin-bottom: 30px; border-left: 5px solid #ddd; overflow: hidden; }
 .projects h5 { margin-bottom: 15px }
@@ -23,14 +27,27 @@ section h2 { margin: 0 !important; padding: 0!important; float: left; width: 100
 .p-skill ul, .tools ul { overflow: hidden; margin: 0; padding: 0; }
 .p-skill li, .tools li { width: 25%; float: left; margin: 0; padding: 0; }
 .p-skill li { width: 50% }
-.p-skill li a, .tools li a { text-decoration: none; color: #444; font-weight: normal; line-height: 140%; }
+.contact li a,
+.p-skill li a, .tools li a { text-decoration: none; color: #222; font-weight: normal; line-height: 140%; }
 
-.p-experience { margin: 30px 0; overflow: hidden; }
-.p-experience h3 { float: right; width: 70%; margin: 0; }
-.p-experience .p-date { float: left; width: 30%; margin-left: 15px; }
+.p-experience { margin: 30px 0 0; overflow: hidden; }
+.p-experience h3 { margin: 0!important; padding: 0; font-weight: normal; line-height: 100%; float: left; }
+.p-experience h3 span:first-of-type { font-style: italic; }
+.p-experience h3 span:last-of-type { font-weight: 700; }
+.p-experience .p-date { margin: 0!important; float: right; }
+.p-experience .accordion-content { display: block; width: 100%; float: left; clear: both; margin: 0 0 15px!important; }
+.p-experience .accordion-content p:first-of-type { margin-top: 10px!important; }
 
-.references { overflow: hidden }
+.p-education { margin-bottom: 30px; }
+.p-education p:first-of-type { margin-bottom: 15px; }
+.p-education h3.h4 { font-size: 16px; }
+
+.references { overflow: hidden; margin: 30px 0 20px; }
+.references .media { margin-bottom: 15px; }
 .references div { width: 50%; float: left; }
-
 .tools h2,
 .references h2 { margin-top: 30px!important; }
+.references .h4 { font-size: 16px; }
+
+.contact h2,
+.contact p { margin: 0 0 15px!important; }

@@ -258,6 +258,10 @@ a#dropbox:active,
 		margin-left: 15px;
 	}
 }
+.print-media-figure {
+	display: none;
+}
+
 	/* Nav
 	***************************/
 	nav.mobile {
@@ -487,7 +491,7 @@ div.accordion-toggle:before {
 ***************************/
 .references {
 	p {
-		margin-top: 0;
+		margin: 0;
 	}
 	.h4 {
 		text-transform: none;
@@ -497,7 +501,7 @@ div.accordion-toggle:before {
 		font-weight: normal;
 	}
 	.media {
-		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 	img.media-figure {
 	    background: #fff;
@@ -508,11 +512,17 @@ div.accordion-toggle:before {
 }
 
 
-/* Connect
+/* Contact
 ***************************/
-.connect {
+.contact {
+	overflow: hidden;
+	p {
+		margin: 0;
+	}
 	li {
 		margin-bottom: 7px;
+		width: 50%;
+		float: left;
 	}
 	svg {
 		margin-right: 10px;

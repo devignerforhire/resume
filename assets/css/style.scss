@@ -490,8 +490,16 @@ div.accordion-toggle:before {
 /* References
 ***************************/
 .references {
+	overflow: hidden;
+	.media {
+		width: 50%;
+		float: left;
+	}
 	p {
 		margin: 0;
+	}
+	h4.h3 {
+		font-size: 12px;
 	}
 	.h4 {
 		text-transform: none;
@@ -598,6 +606,22 @@ div.accordion-toggle:before {
 	.tools li {
 		width: 50%;
 	}
+	.references {
+		.media {
+			width: 100%;
+		}
+		.h4,
+		.h3 {
+			float: left;
+		}
+		.h3 {
+			margin: 6px 0 0 10px;
+		}
+		h5 {
+			width: 100%;
+			float: left;
+		}
+	}
 }
 
 /* Tablet */
@@ -605,10 +629,6 @@ div.accordion-toggle:before {
 	.scrollto {
 		margin-top: 0;
 	}
-}
-
-/* Retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
 
 }
 
@@ -647,34 +667,7 @@ div.accordion-toggle:before {
 	button.show-more {
 		display: none;
 	}
-	.skills {
-		ul {
-			overflow: hidden;
-		}
-		li {
-			width: 48%;
-			float: left;
-			margin-bottom: 30px;
-			a {
-				text-decoration: none;
-				color: #444;
-				font-weight: 700;
-			}
-		}
-		li:nth-of-type(even) {
-			float: right;
-		}
-		div.accordion-content {
-			display: block;
-			margin-top: 12px;
-		}
-	}
 	.references {
-		overflow: hidden;
-		div {
-			width: 50%;
-			float: left;
-		}
 		h4.h3 {
     		font-size: 11px;
 			font-weight: normal;
@@ -706,9 +699,6 @@ div.accordion-toggle:before {
 	}
 	.projects {
 		display: none;
-	}
-	.p-skill .accordion-content {
-    	display: block;
 	}
 }
 @media (max-width: 1290px){
